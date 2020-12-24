@@ -8,7 +8,7 @@ export default function Landing(){
     //TODO: infinite scroll?
     return (
         <div>
-            <Header/>
+            <Header section={'Sid Murthy'}/>
             <LandingBody/>
         </div>
     )
