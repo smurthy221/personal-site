@@ -11,7 +11,8 @@
     font-family: Lato, sans-serif;
     float: inline-start;
     font-size: 35px;
-    color: rgb(223, 223, 223);
+    color: rgb(130, 200, 202, 0.904);
+    text-decoration: none;
 }
 
 .header-element {
@@ -20,4 +21,22 @@
     float: right;
     color: rgb(223, 223, 223);
     font-size: 20px;
+    text-decoration: none;
+}
+
+.header-element-onpage {
+    padding: 1%;
+    font-family: Lato, sans-serif;
+    float: right;
+    color: rgb(223, 223, 223);
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.header-element:hover {
+    background-color: rgba(130, 200, 202, 0.411);
+}
+
+.header-element-onpage:hover {
+    background-color: rgba(130, 200, 202, 0.411);
 }

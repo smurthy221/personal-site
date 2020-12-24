@@ -1,14 +1,13 @@
 import React from 'react';
-import Header from './components/Header';
-import LandingBody from './components/LandingBody';
+import Header from './components/Header.jsx';
 //TODO: import css styling down the road
 
 //Function for the home landing page
-export default function Landing(){
+export default function AboutSid(){
     //TODO: infinite scroll?
     return (
         <header>
-            <Header page='landing' />
+            <Header page='about-sid'/>
         </header>
     )
 }

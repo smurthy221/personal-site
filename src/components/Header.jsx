@@ -3,17 +3,20 @@ import './Header.css';
 import Icon from './Icon';
 
 //Function for the header page
-export default function Header(props){
-    //TODO: add props to indicate which page you are on
+class Header extends React.Component{
     //TODO: add hover capabilities
-    const icon = props.section
-    
-    return (
-        <div className = "header">
-            <Icon isHovered={false} onPage={(icon === 'landing')} page={'Sid Murthy'} />
-            <Icon isHovered={false} onPage={(icon === 'contact')} page={'Contact'} />
-            <Icon isHovered={false} onPage={(icon === 'about_sid')} page={'About Sid'} />
-            <Icon isHovered={false} onPage={(icon === 'experience')} page={'Experience'} />
-        </div>
-    )
-}
+
+    render(){
+        const icon = this.props.page;
+        return (
+            <div className = "header">
+                <Icon onPage={(icon === 'landing')} page_title={'Sid Murthy'} page=''/>
+                <Icon onPage={(icon === 'contact')} page_title={'Contact'} page='contact'/>
+                <Icon onPage={(icon === 'about-sid')} page_title={'About Sid'} page='about-sid'/>
+                <Icon onPage={(icon === 'experience')} page_title={'Experience'} page='experience'/>
+            </div>
+        )
+    }
+};
+
+export default Header

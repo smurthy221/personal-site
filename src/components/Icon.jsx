@@ -7,25 +7,33 @@ class Icon extends React.Component{
     constructor(props){
         super(props)
         this.state = {
-            isHovered : props.isHovered,
             onPage : props.onPage,
+            page_title : props.page_title,
             page : props.page
         };
     }
     render() {
-
-        if (this.state.page === 'Sid Murthy'){
+        if (this.state.page_title === 'Sid Murthy'){
             return (
-                <a className = "header-title">
-                    {this.state.page}
+                <a className = "header-title" href={`${process.env.PUBLIC_URL}/${this.state.page}`}>
+                    {this.state.page_title}
                 </a>
             )
         }
-        return (
-            <a className = "header-element">
-                {this.state.page}
-            </a>
-        )
+        else if (this.state.onPage === true){
+            return (
+                <a className = "header-element-onpage" href={`${process.env.PUBLIC_URL}/${this.state.page}`}>
+                    {this.state.page_title}
+                </a>
+            )
+        }
+        else{
+            return (
+                <a className = "header-element" href={`${process.env.PUBLIC_URL}/${this.state.page}`}>
+                    {this.state.page_title}
+                </a>
+            )
+        }
     }
 };
 
