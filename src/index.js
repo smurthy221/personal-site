@@ -1,20 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter, Route} from 'react-router-dom';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import './temp/index.css';
 import Landing from './Landing';
 import Experience from './Experience';
 import AboutSid from './AboutSid';
 import Contact from './Contact';
+import Header from './components/Header.jsx';
 
 ReactDOM.render( 
     //TODO: also get paths for my experience n shit
     <div>
         <BrowserRouter>
-            <Route path = '/' exact component = {Landing} />
-            <Route path = '/experience' exact component = {Experience} />
-            <Route path = '/about-sid' exact component = {AboutSid} />
-            <Route path = '/contact' exact component = {Contact} />
+            <Switch>
+                <Route exact path = '/' component = {Landing} />
+                <Route path = '/experience' component = {Experience} />
+                <Route path = '/about-sid' component = {AboutSid} />
+                <Route path = '/contact' component = {Contact} />
+            </Switch>
         </BrowserRouter>
     </div>
     ,

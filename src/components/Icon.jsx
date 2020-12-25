@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import './Header.css';
 
 //creating a header icon
@@ -12,26 +13,35 @@ class Icon extends React.Component{
             page : props.page
         };
     }
+
+    handleChange(items){
+        this.setState({
+            onPage: true,
+            page_title: items.page_title,
+            page: items.page
+        })
+    }
+
     render() {
         if (this.state.page_title === 'Sid Murthy'){
             return (
-                <a className = "header-title" href={`${process.env.PUBLIC_URL}/${this.state.page}`}>
+                <Link to='/' className = "header-title">
                     {this.state.page_title}
-                </a>
+                </Link>
             )
         }
         else if (this.state.onPage === true){
             return (
-                <a className = "header-element-onpage" href={`${process.env.PUBLIC_URL}/${this.state.page}`}>
+                <Link className = "header-element-onpage" to={`/${this.state.page}`}>
                     {this.state.page_title}
-                </a>
+                </Link>
             )
         }
         else{
             return (
-                <a className = "header-element" href={`${process.env.PUBLIC_URL}/${this.state.page}`}>
+                <Link className = "header-element" to={`/${this.state.page}`}>
                     {this.state.page_title}
-                </a>
+                </Link>
             )
         }
     }
