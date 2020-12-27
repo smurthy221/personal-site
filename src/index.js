@@ -6,7 +6,8 @@ import Landing from './Landing';
 import Experience from './Experience';
 import AboutSid from './AboutSid';
 import Contact from './Contact';
-import Header from './components/Header.jsx';
+import Coursework from './Coursework';
+
 
 ReactDOM.render( 
     <div>
@@ -14,6 +15,7 @@ ReactDOM.render(
             <Switch>
                 <Route exact path = '/' exact component = {Landing} />
                 <Route path = '/experience' exact component = {Experience} />
+                <Route path = '/coursework' exact component = {Coursework} />
                 <Route path = '/about-sid' exact component = {AboutSid} />
                 <Route path = '/contact' exact component = {Contact} />
             </Switch>

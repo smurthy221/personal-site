@@ -37,7 +37,7 @@
     overflow: hidden;
 }
 
-.experience-header {
+.skills-header {
     font-family: 'Hind Siliguri', sans-serif;
     font-size: x-large;
     color: rgba(39, 39, 39, 0.904);
@@ -45,7 +45,7 @@
     font-style: italic;
 }
 
-.experience-section {
+.skills-section {
     margin: 1%;
     margin-right: 2%;
     padding: 1%;
@@ -61,4 +61,22 @@
     margin: 1%;
     margin-left: 2%;
     float: left;
+}
+
+.experience-header {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: x-large;
+    color: rgba(39, 39, 39, 0.904);
+    padding-left: 2%;
+    font-style: italic;
+}
+
+.internship-section {
+    margin: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 92%;
+    padding: 2%;
+    background-color: rgba(223, 223, 223, 0.808);
+    float: left
 }
