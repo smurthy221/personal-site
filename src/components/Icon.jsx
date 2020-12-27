@@ -14,14 +14,6 @@ class Icon extends React.Component{
         };
     }
 
-    handleChange(items){
-        this.setState({
-            onPage: true,
-            page_title: items.page_title,
-            page: items.page
-        })
-    }
-
     render() {
         if (this.state.page_title === 'Sid Murthy'){
             return (

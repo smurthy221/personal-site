@@ -19,7 +19,7 @@ class Header extends React.Component{
                 <Icon onPage={(this.state.icon === 'landing')} page_title={'Sid Murthy'} page='' />
                 <Icon onPage={(this.state.icon === 'contact')} page_title={'Contact'} page='contact'/>
                 <Icon onPage={(this.state.icon === 'about-sid')} page_title={'About Sid'} page='about-sid'/>
-                <Icon onPage={(this.state.icon === 'experience')} page_title={'Experience'} page='experience'/>
+                <Icon onPage={(this.state.icon === 'experience')} page_title={'Experience/Skills'} page='experience'/>
             </div>
         )
     }

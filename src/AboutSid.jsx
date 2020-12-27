@@ -6,8 +6,13 @@ import Header from './components/Header.jsx';
 export default function AboutSid(){
     //TODO: infinite scroll?
     return (
-        <header>
-            <Header page='about-sid'/>
-        </header>
+        <div>
+            <header>
+                <Header page='about-sid' />
+            </header>
+            <body>
+                <div>This is the about me body</div>
+            </body>
+        </div>
     )
 }

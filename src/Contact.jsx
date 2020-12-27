@@ -7,8 +7,13 @@ export default function Contact(){
     //TODO: infinite scroll?
     
     return (
-        <header>
-            <Header page='contact'/>
-        </header>
+        <div>
+            <header>
+                <Header page='contact' />
+            </header>
+            <body>
+                <div>This is the contact body</div>
+            </body>
+        </div>
     )
 }
