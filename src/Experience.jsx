@@ -25,8 +25,19 @@ export default function Experience(){
                 </div>
                 <h1 className='experience-header'>My past projects & internships!</h1>
                 <div className='internship-section'>
-                    <img src={Amazon} height='150' width='200'/>
-                    <div>yo</div>
+                    <img src={Amazon} className='internship-pic' height='150' width='200'/>
+                    <div>
+                        <div className='internship-text-header'>
+                            <b>Amazon</b> - Incoming Software Engineering Intern
+                            <div className='internship-text-loc'>Seattle, WA</div>
+                        </div>
+                    </div>
+                    <br/>
+                    <div className='internship-text-body'>
+                        <ul>
+                            <li>Interning here next summer!</li>
+                        </ul>
+                    </div>
                 </div>
             </body>
         </div>

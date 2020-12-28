@@ -78,5 +78,30 @@
     width: 92%;
     padding: 2%;
     background-color: rgba(223, 223, 223, 0.808);
-    float: left
+    float: left;
+    color: rgba(39, 39, 39, 0.904);
+}
+
+.internship-pic {
+    margin-right: 17%;
+    background-color: rgba(223, 223, 223, 0.808);
+    float: left;
+}
+
+.internship-text-header {
+    float: inline-start;
+    font-size: larger;
+    font-style: italic;
+    overflow: hidden;
+}
+
+.internship-text-loc {
+    float: right;
+    font-size: large;
+    font-style: italic;
+}
+
+.internship-text-body {
+    font-size: large;
+    float: left;
 }
