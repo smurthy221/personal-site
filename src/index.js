@@ -5,8 +5,7 @@ import './index.css';
 import Landing from './Landing';
 import Experience from './Experience';
 import AboutSid from './AboutSid';
-import Contact from './Contact';
-import Coursework from './Coursework';
+import Footer from './components/Footer'
 
 
 ReactDOM.render( 
@@ -15,11 +14,10 @@ ReactDOM.render(
             <Switch>
                 <Route exact path = '/' exact component = {Landing} />
                 <Route path = '/experience' exact component = {Experience} />
-                <Route path = '/coursework' exact component = {Coursework} />
                 <Route path = '/about-sid' exact component = {AboutSid} />
-                <Route path = '/contact' exact component = {Contact} />
             </Switch>
         </BrowserRouter>
+        <Footer />
     </div>
     ,
     document.getElementById('root')

@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './components/Header.jsx';
 import SkillsPic from './images/skills-pic.jpg';
 import Amazon from './images/corporate-scum.jpg';
+import Novacoast from './images/novacoast.png';
 //TODO: import css styling down the road
 
 //Function for the home landing page
@@ -23,22 +24,69 @@ export default function Experience(){
                         <li><u>Miscellaneous:</u> Microsoft Power BI, MATLAB, Excel</li>
                     </ul>
                 </div>
-                <h1 className='experience-header'>My past projects & internships!</h1>
+
+                <h1 className='experience-header'>My past internships!</h1>
+
                 <div className='internship-section'>
                     <img src={Amazon} className='internship-pic' height='150' width='200'/>
                     <div>
                         <div className='internship-text-header'>
-                            <b>Amazon</b> - Incoming Software Engineering Intern
+                            <b>Amazon</b> - Software Development Engineering Intern
                             <div className='internship-text-loc'>Seattle, WA</div>
                         </div>
                     </div>
-                    <br/>
                     <div className='internship-text-body'>
                         <ul>
                             <li>Interning here next summer!</li>
                         </ul>
                     </div>
                 </div>
+                <div className='internship-section'>
+                    <img src={Novacoast} className='internship-pic' height='150' width='200'/>
+                    <div className='internship-text-header'>
+                        <b>Novacoast</b> - Development Intern (Data Analytics)
+                        <div className='internship-text-loc'>Santa Barbara, CA</div>
+                    </div>
+                    <div className='internship-text-body'>
+                        <ul>
+                            <li>My first internship</li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <h1 className='experience-header'>Some projects I've done...</h1>
+
+                <div className='internship-section'>
+                    <div className='internship-text-header'>
+                        <b>Spotify Song Suggestion Model</b> - <a href='https://github.com/jcasero2/spotify-suggestion' target="_blank">GitHub Link</a>
+                    </div>
+                    <div className='internship-text-body'>
+                        <ul>
+                            <li>It was kinda lit</li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <h1 className='experience-header'>Some of my coursework from my time at the University of Michigan!</h1>
+        
+                <div className='internship-section'>
+                    <div className='internship-text-header'>
+                        <b>Computer Science Courses</b>
+                    </div>
+                    <div className='internship-text-body'>
+                        <b>ENGR 101</b> - Introductory Computer Programming
+                        <ul>
+                            <li>Class was light</li>
+                        </ul>
+                        <b>EECS 203</b> - Discrete Mathematics
+                        <ul>
+                            <li>oh god.</li>
+                            <li><u>One cool thing I learned</u>- The set of all irrational numbers is uncountable.</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+
             </body>
         </div>
     )

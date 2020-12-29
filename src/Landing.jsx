@@ -20,7 +20,9 @@ export default function Landing(){
                     <p><b>May 2022 Graduation</b></p>
                 </div>
                 <div className= 'landing-section2'>
-                    Second section
+                    Intro section<br/>
+                    Stuff about yourself and why you made the site<br/>
+                    Idea: use the top heading for your intro and add a bunch of pics where everything was before
                 </div>
             </body>
         </div>
