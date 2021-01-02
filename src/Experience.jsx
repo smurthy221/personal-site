@@ -15,7 +15,7 @@ export default function Experience(){
             </header>
             <body className='body'>
                 <h1 className='skills-header'>A bit more about my programming skills...</h1>
-                <img src={SkillsPic} className='skills-pic' width='400' height='300' />
+                <img src={SkillsPic} className='skills-pic' width='400' height='300' alt='coys'/>
                 <div className='skills-section'>
                     <ul>
                         <li><u>Programming Languages:</u> Python, C++, Java</li>
@@ -82,6 +82,20 @@ export default function Experience(){
                         <ul>
                             <li>oh god.</li>
                             <li><u>One cool thing I learned</u>- The set of all irrational numbers is uncountable.</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+
+                <div className='internship-section'>
+                    <div className='internship-text-header'>
+                        <b>Other Cool Courses</b>
+                    </div>
+                    <div className='internship-text-body'>
+                        <b>IOE 202</b> - Operations Modeling
+                        <ul>
+                            <li>Class was about stuff like queueing theory and a bunch of IOE stuff.</li>
+                            <li>I got carried tbh</li>
                         </ul>
                     </div>
                     

@@ -46,3 +46,19 @@
     background-color: rgba(130, 202, 162, 0.336);
     transform: scale(1.05);
 }
+
+.image {
+    color: rgba(39, 39, 39, 0.904);
+    width: 20px;
+    height: 20px;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    cursor: pointer;
+    float: right;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}

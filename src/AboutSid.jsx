@@ -11,7 +11,7 @@ export default function AboutSid(){
                 <Header page='about-sid' />
             </header>
             <body className='body'>
-                <h1 className='skills-header'>A bit more about me...</h1>
+                <h1 className='skills-header'>Yes, I have a life outside of school (at least I try to)</h1>
                 <div>
                     
                 </div>

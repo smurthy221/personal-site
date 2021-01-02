@@ -1,9 +1,9 @@
 import React from 'react';
 import './Footer.css';
-import Facebook from '../images/facebook.png';
+import Facebook from '../images/fb.png';
 import GitHub from '../images/github.png';
-import Gmail from '../images/gmail.jpg';
-import LinkedIn from '../images/linkedin.jpg';
+import Gmail from '../images/gmail.png';
+import LinkedIn from '../images/linkedin.png';
 
 //Function for the header page
 class Footer extends React.Component{
