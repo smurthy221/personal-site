@@ -13,33 +13,34 @@ export default function Landing(){
 
     return (
         <div>
-            <header>
-                <Header page='landing'/>
-            </header>
+            <div>
+                <header>
+                    <Header page='landing'/>
+                </header>
+            </div>
+
             <body className='body'>
-                <div margin='auto'>
-                    <Parallax bgImage={sunset} strength={500}>
-                        <div style={{height:500, width: 1600}}>
-                            <TypeWriterEffect
-                                textStyle={{
-                                    fontFamily: 'Hind Siliguri',
-                                    color: '#ffffff',
-                                    fontWeight: 500,
-                                    fontSize: '30px',
-                                }}
-                                startDelay={500}
-                                cursorColor="#ffffff"
-                                multiText={[
-                                    'hey there!',
-                                    'my name is sid',
-                                    "and i can't wait to meet you!"
-                                ]}
-                                multiTextDelay={1000}
-                                typeSpeed={75}
-                            />
-                        </div>
-                    </Parallax>
-                </div>
+                <Parallax bgImage={sunset} strength={500} style={{height:600, width: 'auto'}}>
+                    <div className='typewriter-format'>
+                        <TypeWriterEffect
+                            textStyle={{
+                                fontFamily: 'Hind Siliguri',
+                                color: '#ffffff',
+                                fontWeight: 500,
+                                fontSize: '30px',
+                            }}
+                            startDelay={500}
+                            cursorColor="#ffffff"
+                            multiText={[
+                                'hey there!',
+                                'my name is sid',
+                                "and i can't wait to meet you!"
+                            ]}
+                            multiTextDelay={1000}
+                            typeSpeed={75}
+                        />
+                    </div>
+                </Parallax>
                 
                 <img src={headshot} className='headshot' width='200' height='300' alt='headshot'/>
 
@@ -56,7 +57,6 @@ export default function Landing(){
                     Idea: use the top heading for your intro and add a bunch of pics where everything was before<br/>
                     Yes i took that header pic
                 </div>
-
             </body>
         </div>
     )

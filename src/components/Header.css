@@ -1,10 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap');
+.header-transparent {
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    position: fixed;
+    width: 96%;
+    height: 45px;
+    background: transparent;
+}
+
 .header {
     padding-left: 2%;
     padding-right: 2%;
     padding-top: 1.5%;
     padding-bottom: 1.5%;
     background-color: rgba(39, 39, 39, 0.904);
+    position: fixed;
+    width: 96%;
+    height: 45px;
+    transition: 0.5s;
 }
 
 .header-title {
@@ -12,6 +27,14 @@
     float: inline-start;
     font-size: 35px;
     color: rgba(130, 202, 162, 0.733);
+    text-decoration: none;
+}
+
+.header-title-transparent {
+    font-family: Lato, sans-serif;
+    float: inline-start;
+    font-size: 35px;
+    color: rgba(223, 223, 223, 0.808);
     text-decoration: none;
 }
 
@@ -55,10 +78,4 @@
     padding-right: 1.5%;
     cursor: pointer;
     float: right;
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%
 }

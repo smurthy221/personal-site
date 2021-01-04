@@ -17,7 +17,7 @@ class Icon extends React.Component{
     render() {
         if (this.state.page_title === 'Sid Murthy'){
             return (
-                <Link to='/' className = "header-title">
+                <Link to='/' className = {this.props.show}>
                     {this.state.page_title}
                 </Link>
             )

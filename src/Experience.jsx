@@ -8,10 +8,11 @@ import Novacoast from './images/novacoast.png';
 //Function for the home landing page
 export default function Experience(){
     //TODO: infinite scroll?
+
     return (
         <div>
             <header>
-                <Header page='experience' />
+                <Header page='experience'/>
             </header>
             <body className='body'>
                 <h1 className='skills-header'>A bit more about my programming skills...</h1>
