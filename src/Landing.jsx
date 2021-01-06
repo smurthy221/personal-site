@@ -2,14 +2,16 @@ import React from 'react';
 import Header from './components/Header';
 import './components/Page.css';
 import headshot from './images/headshot-pic.jpg';
-import sunset from './images/sunset.jpg';
+import paris from './images/paris.jpg';
 import {Parallax } from 'react-parallax';
 import TypeWriterEffect from 'react-typewriter-effect';
+import Experience from './Experience';
+import AboutSid from './AboutSid';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
 //Function for the home landing page
 export default function Landing(){
     //TODO: infinite scroll?
-    //sticky header?
 
     return (
         <div>
@@ -20,7 +22,7 @@ export default function Landing(){
             </div>
 
             <body className='body'>
-                <Parallax bgImage={sunset} strength={500} style={{height:600, width: 'auto'}}>
+                <Parallax bgImage={paris} strength={500} style={{height:600, width: 'auto'}} blur = {{max: -1, min: 2}}>
                     <div className='typewriter-format'>
                         <TypeWriterEffect
                             textStyle={{
@@ -37,7 +39,8 @@ export default function Landing(){
                                 "and i can't wait to meet you!"
                             ]}
                             multiTextDelay={1000}
-                            typeSpeed={75}
+                            typeSpeed={90}
+                            loop = {true}
                         />
                     </div>
                 </Parallax>
@@ -57,6 +60,7 @@ export default function Landing(){
                     Idea: use the top heading for your intro and add a bunch of pics where everything was before<br/>
                     Yes i took that header pic
                 </div>
+                
             </body>
         </div>
     )

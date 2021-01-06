@@ -3,11 +3,37 @@ import Header from './components/Header.jsx';
 import SkillsPic from './images/skills-pic.jpg';
 import Amazon from './images/corporate-scum.jpg';
 import Novacoast from './images/novacoast.png';
+import sunset from './images/sunset.jpg';
+import {Parallax } from 'react-parallax';
+import TypeWriterEffect from 'react-typewriter-effect';
 //TODO: import css styling down the road
 
 //Function for the home landing page
 export default function Experience(){
     //TODO: infinite scroll?
+
+    /*<Parallax bgImage={sunset} strength={500} style={{height:600, width: 'auto'}} blur = {{max: -1, min: 2}}>
+        <div className='typewriter-format'>
+            <TypeWriterEffect
+                textStyle={{
+                    fontFamily: 'Hind Siliguri',
+                    color: '#ffffff',
+                    fontWeight: 500,
+                    fontSize: '30px',
+                }}
+                startDelay={500}
+                cursorColor="#ffffff"
+                multiText={[
+                    'i have completed numerous projects',
+                    'worked several internships',
+                    "and taken many courses",
+                    "take a look at my journey"
+                ]}
+                multiTextDelay={1000}
+                typeSpeed={75}
+            />
+        </div>
+    </Parallax>*/
 
     return (
         <div>

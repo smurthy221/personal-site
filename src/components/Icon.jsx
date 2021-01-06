@@ -17,21 +17,21 @@ class Icon extends React.Component{
     render() {
         if (this.state.page_title === 'Sid Murthy'){
             return (
-                <Link to='/' className = {this.props.show}>
+                <Link to='/' className = {this.props.show} onClick={()=>window.scrollTo(0, 0)}>
                     {this.state.page_title}
                 </Link>
             )
         }
         else if (this.state.onPage === true){
             return (
-                <Link className = "header-element-onpage" to={`/${this.state.page}`}>
+                <Link className = "header-element-onpage" to={`/${this.state.page}`} onClick={()=>window.scrollTo(0,0)}>
                     {this.state.page_title}
                 </Link>
             )
         }
         else{
             return (
-                <Link className = "header-element" to={`/${this.state.page}`}>
+                <Link className = "header-element" to={`/${this.state.page}`} onClick={()=>window.scrollTo(0, 0)}>
                     {this.state.page_title}
                 </Link>
             )

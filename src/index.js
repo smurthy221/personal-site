@@ -1,24 +1,40 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import {BrowserRouter, Route, Switch, useLocation} from 'react-router-dom';
 import './index.css';
 import Landing from './Landing';
 import Experience from './Experience';
 import AboutSid from './AboutSid';
 import Footer from './components/Footer'
 
+/*function usePageViews() {
+    let {location} = useLocation();
+    React.useEffect(() => {
+      console.log(location);
+    }, [location]);
+}*/
+
+function App(){
+
+    //usePageViews();
+
+    return(
+        <div>
+            <BrowserRouter>
+                <Switch>
+                    <Route exact path = '/' render = {()=><Landing/>} />
+                    <Route path = '/experience' render = {()=><Experience/>} />
+                    <Route path = '/about-sid' render = {()=><AboutSid/>} />
+                </Switch>
+            </BrowserRouter>
+            <Footer />
+        </div>
+    )
+}
+
 
 ReactDOM.render( 
-    <div>
-        <BrowserRouter>
-            <Switch>
-                <Route exact path = '/' exact component = {Landing} />
-                <Route path = '/experience' exact component = {Experience} />
-                <Route path = '/about-sid' exact component = {AboutSid} />
-            </Switch>
-        </BrowserRouter>
-        <Footer />
-    </div>
+    <App/>
     ,
     document.getElementById('root')
 );
