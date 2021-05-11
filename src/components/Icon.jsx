@@ -17,7 +17,7 @@ class Icon extends React.Component{
     render() {
         if (this.state.page_title === 'Sid Murthy'){
             return (
-                <Link to='/' className = {this.props.show} onClick={()=>window.scrollTo(0, 0)}>
+                <Link to='/' className = {this.props.show} onClick={()=>window.scrollTo(0,0)}>
                     {this.state.page_title}
                 </Link>
             )
@@ -31,7 +31,7 @@ class Icon extends React.Component{
         }
         else{
             return (
-                <Link className = "header-element" to={`/${this.state.page}`} onClick={()=>window.scrollTo(0, 0)}>
+                <Link className = "header-element" to={`/${this.state.page}`} onClick={()=>window.scrollTo(0,0)}>
                     {this.state.page_title}
                 </Link>
             )

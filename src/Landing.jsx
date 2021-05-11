@@ -1,26 +1,19 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Header from './components/Header';
 import './components/Page.css';
 import headshot from './images/headshot-pic.jpg';
 import paris from './images/paris.jpg';
 import {Parallax } from 'react-parallax';
 import TypeWriterEffect from 'react-typewriter-effect';
-import Experience from './Experience';
-import AboutSid from './AboutSid';
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
 //Function for the home landing page
 export default function Landing(){
     //TODO: infinite scroll?
-
     return (
-        <div>
-            <div>
-                <header>
-                    <Header page='landing'/>
-                </header>
-            </div>
-
+        <div id='landing'>
+            <header>
+                <Header page="/"/>
+            </header>
             <body className='body'>
                 <Parallax bgImage={paris} strength={500} style={{height:600, width: 'auto'}} blur = {{max: -1, min: 2}}>
                     <div className='typewriter-format'>
@@ -48,19 +41,21 @@ export default function Landing(){
                 <img src={headshot} className='headshot' width='200' height='300' alt='headshot'/>
 
                 <div className='landing-section'>
-                    <p><b>Sid Murthy</b></p>
-                    <p><b>University of Michigan College of Engineering</b></p>
-                    <p><b>B.S.E Computer Science, Minor in Mathematics</b></p>
-                    <p><b>May 2022 Graduation</b></p>
+                    <h4>
+                        <p>Sid Murthy</p>
+                        <p>University of Michigan College of Engineering</p>
+                        <p>B.S.E Computer Science, Minor in Mathematics</p>
+                        <p>May 2022 Graduation</p>           
+                    </h4>
                 </div>
 
                 <div className= 'landing-section2'>
-                    Intro section<br/>
-                    Stuff about yourself and why you made the site<br/>
-                    Idea: use the top heading for your intro and add a bunch of pics where everything was before<br/>
-                    Yes i took that header pic
+                    <h4>Hey There!</h4>
+                    <p>My name is Sid and welcome to my page!</p>
+                    <p>This site is meant to compile my school, career and life highlights all into one page and I plan to continue updating and adding new features over time.</p>
+                    <p>(And yes I took all of the header pics)</p>
+                    <p><b>Looking forward to meeting you all!</b></p>
                 </div>
-                
             </body>
         </div>
     )
