@@ -8,6 +8,7 @@ import {Parallax } from 'react-parallax';
 import TypeWriterEffect from 'react-typewriter-effect';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import Dropdown from 'react-bootstrap/Dropdown';
+import Ann from './images/ann-arbor.jpg';
 //TODO: import css styling down the road
 
 //Function for the home landing page
@@ -20,7 +21,7 @@ export default function Experience(){
                 <Header page="/"/>
             </header>
             <body className='body'>
-                <Parallax bgImage={banff} strength={500} style={{height:600, width: 'auto'}} blur = {{max: -1, min: 2}}>
+                <Parallax bgImage={Ann} strength={500} style={{height:600, width: 'auto'}} blur = {{max: -1, min: 2}}>
                     <div className='typewriter-format'>
                         <TypeWriterEffect
                             textStyle={{
@@ -41,7 +42,9 @@ export default function Experience(){
                     </div>
                 </Parallax>
 
-                <div><h1 className='skills-header'>A bit more about my programming skills...</h1></div>
+                <div id='programming-skills'>
+                    <h1 className='skills-header'>A bit more about my programming skills...</h1>
+                </div>
 
                 <img src={SkillsPic} className='skills-pic' width='400' height='300' alt='coys'/>
 
@@ -54,7 +57,9 @@ export default function Experience(){
                     </ul>
                 </div>
 
-                <div><h1 className='experience-header'>My past internships!</h1></div>
+                <div id='past-internships'>
+                    <h1 className='experience-header'>My past internships!</h1>
+                </div>
 
                 <div className='internship-section'>
                     <img src={Amazon} className='internship-pic' height='150' width='200'/>
@@ -89,11 +94,13 @@ export default function Experience(){
                     </div>
                 </div>
             
-                <div><h1 className='experience-header'>Some projects I've done...</h1></div>
+                <div id='projects'>
+                    <h1 className='experience-header'>Some projects I've done...</h1>
+                </div>
 
                 <div className='internship-section'>
-                    <div className='internship-text-header'>
-                        <b>Spotify Song Suggestion Model</b> - <a href='https://github.com/jcasero2/spotify-suggestion' target="_blank">GitHub Link</a>
+                    <div className='internship-text-header' onClick={()=> window.open("https://github.com/jcasero2/spotify-suggestion", "_blank")}>
+                        <b>Spotify Song Suggestion Model</b>
                     </div>
                     <div className='internship-text-body'>
                         <ul>
@@ -102,7 +109,9 @@ export default function Experience(){
                     </div>
                 </div>
             
-                <div><h1 className='experience-header'>Some of my coursework from my time at the University of Michigan!</h1></div>
+                <div id='coursework'>
+                    <h1 className='experience-header'>Some of my coursework from my time at the University of Michigan!</h1>
+                </div>
         
                 <div className='internship-section'>
 
@@ -157,7 +166,6 @@ export default function Experience(){
                             <li><u>One cool thing I learned</u>- Hadoop!</li>
                         </ul>
                     </div>
-                    
                 </div>
                 
                 <div className='internship-section'>
@@ -201,7 +209,11 @@ export default function Experience(){
                         <b>IOE 202</b> - Operations Modeling
                         <ul>
                             <li>Class was about stuff like queueing theory and a bunch of IOE stuff.</li>
-                            <li>I got carried tbh</li>
+                        </ul>
+                        <b>Phil 355</b> - Contemporary Moral Problems
+                        <ul>
+                            <li>Class was about arguing different political and social issues through the lens of different authors.</li>
+                            <li>We used reconstructions to look at each of their arguments.</li>
                         </ul>
                     </div>
                 </div>
